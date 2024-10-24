@@ -1,14 +1,19 @@
 {
   "name": "cupper",
-  "displayName": "COBOL-UPPERCASE",
-  "description": "Set all COBOL keyword to uppercase",
-  "version": "0.0.1",
+  "publisher": "thorstenausten",
+  "displayName": "CUPPER - Cobol Uppercase",
+  "description": "Set all (COBOL keyword) to uppercase",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.94.0"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "Cobol"
+  ],
+
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
@@ -37,5 +42,10 @@
     "typescript": "^5.6.2",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frai075a/cupper.git"
+  },
+  "license": "LGPL-3.0-or-later"
 }

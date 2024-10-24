@@ -9,5 +9,6 @@ A new command, called "Convert COBOL Keywords to upper case" is available after 
 ## Release Notes
 
 ### 1.0.0
-
 Initial release of CUPPER ...
+### 1.0.1
+Several Fixes included
