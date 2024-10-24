@@ -2,10 +2,10 @@
   "name": "cupper",
   "publisher": "thorstenausten",
   "displayName": "CUPPER - Cobol Uppercase",
-  "description": "Set all (COBOL keyword) to uppercase",
-  "version": "1.0.1",
+  "description": "Set all (COBOL keyword - ) Strings to uppercase but ignore comments and literals",
+  "version": "1.0.3",
   "engines": {
-    "vscode": "^1.94.0"
+    "vscode": "^1.89.1"
   },
   "categories": [
     "Other"

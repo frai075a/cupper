@@ -1,6 +1,6 @@
 # cupper README
 
-Cupper is a small extension for all COBOL user of VS Code whose use capital letters.
+Cupper is a small extension for all COBOL users of VS Code who like to use capital letters in their code.
 
 ## Features
 
@@ -12,3 +12,7 @@ A new command, called "Convert COBOL Keywords to upper case" is available after 
 Initial release of CUPPER ...
 ### 1.0.1
 Several Fixes included
+### 1.0.2
+Changed package.json
+### 1.0.3
+Changed package.json
