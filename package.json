@@ -5,7 +5,7 @@
   "description": "Set all (COBOL keyword - ) Strings to uppercase but ignore comments and literals",
   "version": "1.0.3",
   "engines": {
-    "vscode": "^1.89.1"
+    "vscode": "^1.92.2"
   },
   "categories": [
     "Other"
