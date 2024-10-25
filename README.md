@@ -16,3 +16,5 @@ Several Fixes included
 Changed package.json
 ### 1.0.3
 Changed package.json
+### 1.0.4
+Changed Delimiter Handling

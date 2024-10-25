@@ -3,7 +3,7 @@
   "publisher": "thorstenausten",
   "displayName": "CUPPER - Cobol Uppercase",
   "description": "Set all (COBOL keyword - ) Strings to uppercase but ignore comments and literals",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "vscode": "^1.92.2"
   },

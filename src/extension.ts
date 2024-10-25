@@ -32,7 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
 						}
 						// Großschreibung nur für die Teile des Strings, die außerhalb der Delimiter sind
 						const changedText = modifiedText.substring(0, strStart).toUpperCase() +
-						                    modifiedText.substring(strStart+1, strEnde) +
+						                    modifiedText.substring(strStart, strEnde) +
 						                    modifiedText.substring(strEnde).toUpperCase();
 						modifiedText = changedText;
 					}
