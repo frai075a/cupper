@@ -18,3 +18,5 @@ Changed package.json
 Changed package.json
 ### 1.0.4
 Changed Delimiter Handling
+### 1.0.5
+Handling of large literals (no closing apostroph, continued in the next line) fixed

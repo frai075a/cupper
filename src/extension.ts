@@ -22,18 +22,31 @@ export function activate(context: vscode.ExtensionContext) {
 					else {
 						if (modifiedText.indexOf("'") < 0) {
 							// dann sind doppelte Hochkommata die Delimiter
-							var strStart = modifiedText.indexOf("\"") - 1;
+							var strStart = modifiedText.indexOf("\"", 7);
 							var strEnde = modifiedText.indexOf("\"", strStart+2);
+							if (strEnde < 1) {
+								//gibt es keine schließende Hochkommata, wird das Literal in der nächsten Zeile fortgesetzt.
+								//Damit der Prozess sauber funktioniert, wird von einem Abschluss an Pos 72 ausgegangen.
+								strEnde = 71;
+							}
 						}
 						else {
 							// dann sind einfache Hochkommata die Delimiter
-							var strStart = modifiedText.indexOf("'") - 1;
+							var strStart = modifiedText.indexOf("'", 7);
 							var strEnde = modifiedText.indexOf("'", strStart+2);
+							if (strEnde < 1) {
+								//gibt es keine schließende Hochkommata, wird das Literal in der nächsten Zeile fortgesetzt.
+								//Damit der Prozess sauber funktioniert, wird von einem Abschluss an Pos 72 ausgegangen.
+								strEnde = 71;
+							}
+
 						}
 						// Großschreibung nur für die Teile des Strings, die außerhalb der Delimiter sind
-						const changedText = modifiedText.substring(0, strStart).toUpperCase() +
-						                    modifiedText.substring(strStart, strEnde) +
-						                    modifiedText.substring(strEnde).toUpperCase();
+						// Inhalte der Spalte 1-7 bleiben unberührt
+                        const changedText = modifiedText.substring(0, 7) +
+						    				modifiedText.substring(7, strStart).toUpperCase() +
+                            				modifiedText.substring(strStart, strEnde+1) +
+                            				modifiedText.substring(strEnde+1).toUpperCase()
 						modifiedText = changedText;
 					}
 					if (modifiedText !== text) {
